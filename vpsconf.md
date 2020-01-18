@@ -29,4 +29,7 @@ sudo ./udp2raw_amd64 -c -r [2001:470:18:a9c::2]:10079 -l 127.0.0.1:10079 --raw-m
 
 82.129.30.128
 
+
+https://github.com/teddysun/shadowsocks_install/blob/master/shadowsocks-all.sh  
+
  
