@@ -18,7 +18,7 @@ sudo ip -6 route add default via $REMOTE_IP6:$REMOTE_IP4 dev sit1
 
 
 
-sslocal -s "127.0.0.1" -p 8388 -b "0.0.0.0" -l 2166 -m aes-6-cfb -k socks11520  
+sslocal -s "127.0.0.1" -p 8388 -b "0.0.0.0" -l 2166 -m aes-256-cfb -k socks11520  
 sudo ./udp2raw_amd64 -c -r [2001:470:18:a9c::2]:10079 -l 127.0.0.1:10079 --raw-mode faketcp -a -k socks11520  
 ./client_linux_amd64 -r "127.0.0.1:10079" -l "127.0.0.1:8388"  --nocomp -mode fast2 -mtu 1300  
 
